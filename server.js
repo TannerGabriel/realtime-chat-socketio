@@ -12,6 +12,7 @@ const normalizePort = val => {
 	}
 	return false
 }
+
 const port = normalizePort(process.env.PORT || '3000')
 app.set('port', port)
 
@@ -47,6 +48,7 @@ server.on('listening', () => {
 // Web sockets
 const io = require('socket.io')(server)
 
+// Listen to events on our socket
 io.sockets.on('connection', (socket) => {
 	console.log('Client connected: ' + socket.id)
 
