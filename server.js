@@ -44,4 +44,15 @@ server.on('listening', () => {
 	console.log('Listening on ' + bind)
 })
 
+// Web sockets
+const io = require('socket.io')(server)
+
+io.sockets.on('connection', (socket) => {
+	console.log('Client connected: ' + socket.id)
+
+	socket.on('Send', (data) => socket.broadcast.emit('Send', data))
+
+	socket.on('disconnect', () => console.log('Client has disconnected'))
+})
+
 server.listen(port)
