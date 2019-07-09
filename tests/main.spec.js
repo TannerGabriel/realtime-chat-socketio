@@ -8,5 +8,7 @@ describe('normalizePort', () => {
 	it('isValid', () => {
 		expect(normalizePort(0)).toBe(0)
 		expect(normalizePort('0')).toBe(0)
+		expect(normalizePort(10)).toBe(10)
+		expect(normalizePort('10')).toBe(10)
 	})
 })
