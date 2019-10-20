@@ -12,6 +12,16 @@ npm install
 node server
 ```
 
+Start using Docker
+
+```bash
+# Building the image
+docker build --tag socketiochat .
+
+# Run the image in a container
+docker run -d -p 3000:3000 socketiochat
+```
+
 ## Author
 
 Gabriel Tanner
