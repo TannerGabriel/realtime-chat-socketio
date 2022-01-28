@@ -20,14 +20,14 @@
   },
   "homepage": "https://github.com/TannerGabriel/realtime-chat-socketio#readme",
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "express": "^4.17.0",
-    "jsdom": "^15.1.0",
-    "nodemon": "^1.19.0",
-    "socket.io": "^2.2.0"
+    "body-parser": "^1.19.1",
+    "express": "^4.17.2",
+    "jsdom": "^19.0.0",
+    "nodemon": "^2.0.15",
+    "socket.io": "^4.4.1"
   },
   "devDependencies": {
-    "cypress": "^3.8.3",
-    "eslint": "^6.0.1"
+    "cypress": "^9.3.1",
+    "eslint": "^8.7.0"
   }
 }
