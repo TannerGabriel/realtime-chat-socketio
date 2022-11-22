@@ -24,7 +24,7 @@
     "express": "^4.17.2",
     "jsdom": "^19.0.0",
     "nodemon": "^2.0.15",
-    "socket.io": "^4.4.1"
+    "socket.io": "^4.5.3"
   },
   "devDependencies": {
     "cypress": "^9.3.1",
